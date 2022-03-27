@@ -1,0 +1,48 @@
+{
+  "create_payment_request": {
+    "data": [
+      {
+        "ref": "A.4",
+        "initiator_id": "4e2728cc-b4ba-42c2-a6c3-26a7758de58d",
+        "authoriser_id": "8df89c16-330f-462b-8891-808d7bdceb7f",
+        "contact_id": "a80ac411-c8fb-45c0-9557-607c54649907",
+        "bank_account_id": "fa80ac411-c8fb-45c0-9557-607c54649907",
+        "status": "proposed",
+        "status_reason": null,
+        "responded_at": null,
+        "created_at": "2017-03-20T00:53:27Z",
+        "terms": {
+          "per_payout": {
+            "max_amount": 10000,
+            "min_amount": 1
+          },
+          "per_frequency": {
+            "days": 7,
+            "max_amount": 1000000
+          }
+        }
+      },
+      {
+        "ref": "A.3",
+        "initiator_id": "4e2728cc-b4ba-42c2-a6c3-26a7758de58d",
+        "authoriser_id": "56df206a-aaff-471a-b075-11882bc8906a",
+        "contact_id": "a80ac411-c8fb-45c0-9557-607c54649907",
+        "bank_account_id": "fa80ac411-c8fb-45c0-9557-607c54649907",
+        "status": "proposed",
+        "status_reason": null,
+        "responded_at": null,
+        "created_at": "2017-03-16T22:51:48Z",
+        "terms": {
+          "per_payout": {
+            "max_amount": 5000,
+            "min_amount": 0
+          },
+          "per_frequency": {
+            "days": "1",
+            "max_amount": 10000
+          }
+        }
+      }
+    ]
+  }
+}
