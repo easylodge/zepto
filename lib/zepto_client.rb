@@ -22,7 +22,7 @@ module ZeptoClient
 
     def initialize(api_key:)
       @api_key = api_key
-      @base_url = "https://api.sandbox.split.cash/"
+      @base_url = Rails.env.production? ?  "https://api.split.cash/" : "https://api.sandbox.split.cash/"
     end
 
     private
