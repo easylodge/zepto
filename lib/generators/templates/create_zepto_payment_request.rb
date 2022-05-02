@@ -1,7 +1,7 @@
 class CreateZeptoClientPaymentRequest < ActiveRecord::Migration
   def self.up
-    unless ActiveRecord::Base.connection.table_exists? 'zepto_client_payment_requests'
-      create_table :zepto_client_payment_requests do |t|
+    unless ActiveRecord::Base.connection.table_exists? 'zepto_payment_requests'
+      create_table :zepto_payment_requests do |t|
         t.text :ref
         t.text :credit_ref
         t.integer :transaction_id
@@ -14,6 +14,6 @@ class CreateZeptoClientPaymentRequest < ActiveRecord::Migration
   end
 
   def self.down
-    drop_table :zepto_client_payment_requests if ActiveRecord::Base.connection.table_exists? 'zepto_client_payment_requests'
+    drop_table :zepto_payment_requests if ActiveRecord::Base.connection.table_exists? 'zepto_payment_requests'
   end
 end
