@@ -1,6 +1,5 @@
 require "httparty"
 require "active_record"
-require "pry"
 
 require 'zepto_client/payment_request'
 

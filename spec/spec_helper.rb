@@ -5,7 +5,6 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'bundler/setup'
 require 'zepto_client'
 require 'shoulda/matchers'
-require 'pry'
 Bundler.setup
 
 ActiveRecord::Base.establish_connection(
