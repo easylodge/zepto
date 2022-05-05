@@ -1,5 +1,5 @@
 # https://docs.zepto.money/#Zepto-API-Contacts--Receivable-
-module ContactsReceivable
+module Api::ContactsReceivable
   def create_receivable_contact(body)
     endpoint = "contacts/receivable"
     post(endpoint, body)
