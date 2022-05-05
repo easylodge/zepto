@@ -13,7 +13,7 @@ module ZeptoClient
     include Endpoints::ContactsReceivable
     include Endpoints::Contacts
     include Endpoints::PaymentRequests
-    include Endpoints::Payments
+
     attr_accessor :api_key, :base_url
 
     def initialize(api_key)
