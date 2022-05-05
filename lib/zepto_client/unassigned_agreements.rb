@@ -2,22 +2,22 @@
 module UnassignedAgreements
   def get_unassigned_agreement(id)
     endpoint = "unassigned_agreements/#{id}"
-    res = get(endpoint)
+    get(endpoint)
   end
 
   def list_unassigned_agreements
     endpoint = "unassigned_agreements"
-    res = get(endpoint)
+    get(endpoint)
   end
 
   def create_unassigned_agreement(body)
     endpoint = "unassigned_agreements"
-    response = post(endpoint, body)
+    post(endpoint, body)
   end
 
   def delete_unassigned_agreement(id)
     endpoint = "unassigned_agreements/#{id}"
-    res = delete(endpoint)
+    delete(endpoint)
   end
 
 end

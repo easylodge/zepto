@@ -2,21 +2,21 @@
 module Contacts
   def create_contact(id, body)
     endpoint = "contacts/#{id}"
-    response = post(endpoint, body)
+    post(endpoint, body)
   end
 
   def list_contacts
     endpoint = "contacts"
-    response = get(endpoint)
+    get(endpoint)
   end
 
   def delete_contact(id)
     endpoint = "contacts/#{id}"
-    response = get(endpoint)
+    get(endpoint)
   end
 
   def update_contact(id, body)
     endpoint = "contacts/#{id}"
-    response = patch(endpoint, body)
+    patch(endpoint, body)
   end
 end
