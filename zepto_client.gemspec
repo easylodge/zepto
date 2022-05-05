@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Zepto API client}
   spec.description   = %q{Rails gem to interact with the Zepto API}
-  spec.homepage      = "https://github.com/easylodge/zepto"
+  spec.homepage      = "https://github.com/easylodge/zepto_client"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
