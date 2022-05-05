@@ -1,11 +1,11 @@
 
 require "httparty"
 
-require "zepto_client/endpoints/agreements"
-require "zepto_client/endpoints/contacts_receivable"
-require "zepto_client/endpoints/contacts"
-require "zepto_client/endpoints/payment_requests"
-require "zepto_client/endpoints/unassigned_agreements"
+require "zepto_client/api/agreements"
+require "zepto_client/api/contacts_receivable"
+require "zepto_client/api/contacts"
+require "zepto_client/api/payment_requests"
+require "zepto_client/api/unassigned_agreements"
 
 module ZeptoClient
   class Api
