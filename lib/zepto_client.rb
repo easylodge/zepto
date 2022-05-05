@@ -4,7 +4,7 @@ require "active_record"
 require "zepto_client/agreements"
 require "zepto_client/contacts_receivable"
 require "zepto_client/contacts"
-require "zepto_client/payment_requests"
+
 require "zepto_client/payments"
 require "zepto_client/unassigned_agreements"
 # require 'zepto_client/payment_request'
@@ -66,3 +66,4 @@ module ZeptoClient
   end
 
 end
+require "zepto_client/payment_requests"
