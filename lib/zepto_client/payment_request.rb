@@ -1,3 +1,5 @@
+require "active_record"
+
 class ZeptoClient::PaymentRequest < ActiveRecord::Base
   self.table_name = "zepto_payment_requests"
 
