@@ -1,6 +1,7 @@
-module ZeptoClient
-  class PaymentRequest < ActiveRecord::Base
-    self.table_name = "zepto_payment_requests"
+require "active_record"
+
+class ZeptoClient::PaymentRequest < ActiveRecord::Base
+  self.table_name = "zepto_payment_requests"
 
     validates :repayment_id, presence: true
     validates :transaction_id, presence: true
