@@ -66,4 +66,3 @@ module ZeptoClient
   end
 
 end
-require 'zepto_client/payment_request'
