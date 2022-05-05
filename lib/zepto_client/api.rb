@@ -1,8 +1,8 @@
-# require "zepto_client/agreements"
-# require "zepto_client/contacts_receivable"
-# require "zepto_client/contacts"
-# require "zepto_client/payment_requests"
-# require "zepto_client/unassigned_agreements"
+require "zepto_client/agreements"
+require "zepto_client/contacts_receivable"
+require "zepto_client/contacts"
+require "zepto_client/payment_requests"
+require "zepto_client/unassigned_agreements"
 
 class Api
   include Agreements
@@ -12,7 +12,7 @@ class Api
   include Payments
   attr_accessor :api_key, :base_url
 
-  def initialize(api_key:)
+  def initialize(api_key)
     @api_key = api_key
     @base_url = Rails.env.production? ?  "https://api.split.cash/" : "https://api.sandbox.split.cash/"
   end
