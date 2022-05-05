@@ -1,19 +1,19 @@
 
 require "httparty"
 
-require "zepto_client/api/agreements"
-require "zepto_client/api/contacts_receivable"
-require "zepto_client/api/contacts"
-require "zepto_client/api/payment_requests"
-require "zepto_client/api/unassigned_agreements"
+require "zepto_client/endpoints/agreements"
+require "zepto_client/endpoints/contacts_receivable"
+require "zepto_client/endpoints/contacts"
+require "zepto_client/endpoints/payment_requests"
+require "zepto_client/endpoints/unassigned_agreements"
 
 module ZeptoClient
   class Api
-    include Agreements
-    include ContactsReceivable
-    include Contacts
-    include PaymentRequests
-    include Payments
+    include Endpoints::Agreements
+    include Endpoints::ContactsReceivable
+    include Endpoints::Contacts
+    include Endpoints::PaymentRequests
+    include Endpoints::Payments
     attr_accessor :api_key, :base_url
 
     def initialize(api_key)
