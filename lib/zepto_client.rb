@@ -12,10 +12,6 @@ require 'zepto_client/payment_request'
 require 'zepto_client/railtie' if defined?(Rails)
 
 module ZeptoClient
-  class << self
-
-  end
-
   class Api
     include Agreements
     include ContactsReceivable
