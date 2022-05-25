@@ -2,11 +2,9 @@ class CreateZeptoClientPaymentRequest < ActiveRecord::Migration
   def self.up
     unless ActiveRecord::Base.connection.table_exists? 'zepto_payment_requests'
       create_table :zepto_payment_requests do |t|
-        t.text :ref
-        t.text :credit_ref
-        t.integer :transaction_id
+        t.string :payment_reference
         t.integer :repayment_id
-        t.text :status
+        t.string :status
         t.timestamps
       end
 
