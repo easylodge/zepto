@@ -14,10 +14,10 @@ module ZeptoClient
     include Endpoints::Contacts
     include Endpoints::PaymentRequests
 
-    attr_accessor :api_key, :base_url
+    attr_accessor :token, :base_url
 
-    def initialize(api_key, live: false)
-      @api_key = api_key
+    def initialize(token: nil, live: false)
+      @token = token
       @base_url = @base_url = live ? "https://api.split.cash/" : "https://api.sandbox.split.cash/"
     end
 
@@ -28,7 +28,7 @@ module ZeptoClient
     end
 
     def headers
-      @headers ||= { "Authorization": "Bearer #{@api_key}"}
+      @headers ||= { "Authorization": "Bearer #{@token}"}
     end
 
     def get(endpoint)
