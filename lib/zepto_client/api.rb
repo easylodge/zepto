@@ -16,9 +16,9 @@ module ZeptoClient
 
     attr_accessor :api_key, :base_url
 
-    def initialize(api_key, base_url)
+    def initialize(api_key, live: false)
       @api_key = api_key
-      @base_url = base_url
+      @base_url = @base_url = live ? "https://api.split.cash/" : "https://api.sandbox.split.cash/"
     end
 
     private
