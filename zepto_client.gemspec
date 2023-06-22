@@ -5,8 +5,8 @@ require 'zepto_client/version'
 Gem::Specification.new do |spec|
   spec.name          = "zepto_client"
   spec.version       = ZeptoClient::VERSION
-  spec.authors       = ["Matt Clarke"]
-  spec.email         = ["matt.clarke85@gmail.com"]
+  spec.authors       = ["Matt Clarke", "Jean le Roux"]
+  spec.email         = ["matt.clarke85@gmail.com", "jeanlrx@gmail.com"]
 
   spec.summary       = %q{Zepto API client}
   spec.description   = %q{Rails gem to interact with the Zepto API}

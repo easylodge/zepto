@@ -10,6 +10,7 @@ require "zepto_client/endpoints/unassigned_agreements"
 module ZeptoClient
   class Api
     include Endpoints::Agreements
+    include Endpoints::UnassignedAgreements
     include Endpoints::ContactsReceivable
     include Endpoints::Contacts
     include Endpoints::PaymentRequests
