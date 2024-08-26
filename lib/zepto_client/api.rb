@@ -19,7 +19,7 @@ module ZeptoClient
 
     def initialize(token: nil, live: false)
       @token = token
-      @base_url = @base_url = live ? "https://api.split.cash/" : "https://api.sandbox.split.cash/"
+      @base_url = @base_url = live ? "https://api.zeptopayments.com/" : "https://api.sandbox.zeptopayments.com/"
     end
 
     private
