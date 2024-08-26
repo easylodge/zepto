@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    zepto_client (1.0.0)
+    zepto_client (1.0.1)
       activesupport
       httparty
 
